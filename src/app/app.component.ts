@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,13 +8,4 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'ResetPassword';
-  public showMyMessage = false
-
-  showMessageSoon() {
-    this.showMyMessage = true
-    setTimeout(() => {
-      this.showMyMessage = false
-    }, 3000)
-  }
 }
